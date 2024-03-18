@@ -1,0 +1,34 @@
+.tooltip {
+    @include mainFont();
+    font-size: 1em !important;
+    background: #28180D !important;
+    color: white !important;
+    border: 3px solid rgba(255,255,255,.9) !important;
+}
+
+.snackbar_root {
+    @include mainFont();
+    color: #fff;
+    background: #F44336 !important;
+    font-size: 1em !important;
+    border: 4px solid rgba(255,255,255,.5) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.snackbar_success {
+    background: #46bf00 !important;
+    background-size: cover !important;
+    background-position-y: 10px !important;
+    border: 4px solid rgba(255,255,255,.5) !important;
+}
+
+.snackbar_action_button {
+    @extend .button;
+
+    @include mainFont();
+    color: #444 !important;
+    background: rgba(255,255,255,.5);
+    text-shadow: none !important;
+    font-size: 0.5em !important;
+}

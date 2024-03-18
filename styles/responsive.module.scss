@@ -1,0 +1,281 @@
+@media only screen and (max-width: 1000px) {
+
+    .content_boxes {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-direction: column !important;
+
+        .main_box {
+            flex: 1 !important;
+            padding: 20px !important;
+            padding-top: 35% !important;
+        }
+    }
+	   
+    .container_logo {
+        position: relative !important;
+    }
+
+    .pattern_milk {
+        /* &.milk_pattern_left, &.milk_pattern_right {
+            background-size: 100px 100% !important;
+        } */
+        display: none !important;
+        /* opacity: .2 !important; */
+    }
+
+    .logo_mobile {
+        display: block !important;
+        position: absolute !important;
+        top: 8% !important;
+        left: calc(50% - 40px) !important;
+        z-index: 1000 !important;
+        img {
+            max-width: 80px !important;
+        }
+    }
+
+    .pattern_cup {
+        background: url(assetURL('patterns/milk_cup_v2.png')) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+
+        top: -7% !important;
+        left: calc(50% - 35px) !important;
+        width: 70px !important;
+    }
+
+    .menu {
+        flex-direction: column !important;;
+        justify-content: center !important;
+        margin-bottom: 0 !important;
+
+        .menu_item {
+            margin-right: 2px !important;
+
+            a {
+                font-size: 1em !important;
+            }
+        }
+
+        img {
+            max-width: 80px !important;
+        }
+    }
+    
+    .header_block {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 10% !important;
+
+        img {
+            margin: 10px auto !important;
+        }
+
+        .connection_block {
+            position: relative !important;
+            margin: 0 auto !important;
+            margin-bottom: 30px !important;
+            right: 0 !important;
+
+            .connect_btn {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .buy_box, .stats_box_container, .referral_box_container {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 20px auto !important;
+
+        button {
+            font-size: 1em !important;
+        }
+
+        p {
+            font-size: 1.4em !important;
+        }
+
+        .buy_stat_item {
+            flex-direction: column-reverse !important;
+            /* margin-top: 20px;
+            margin-bottom: 20px; */
+            margin: 0 !important;
+        }
+
+        .buy_stat {
+            p {
+                font-size: 1.1em !important;
+            }
+        }
+
+        .logo_box {
+            display: none !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .character_image {
+            /* position: relative !important;
+            margin: 0 auto !important; */
+            top: -25px;
+            left: 5px;
+            width: 30px !important;
+            height: 75px !important;
+            max-width: 30px !important;
+            max-height: 75px !important;
+        }
+
+        .stats_stats {
+            .stat {
+                margin-bottom: 10px !important;
+
+                p {
+                    font-size: 1em !important;
+                    max-width: 49% !important;
+                }
+            }
+        }
+
+        .button_sell_container {
+            flex-direction: column !important;
+
+            .button_sell_image_text {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+
+            .button_sell_penalty {
+                margin-top: 10px !important;
+                font-size: 1em !important;
+            }
+        }
+    }
+
+    .referral_v2_container {
+        width: 90% !important;
+        margin: 0 auto !important;
+
+        .referral_empty_space {
+            flex: 0 !important;
+        }
+    }
+
+    .nutritional_info_box {
+        /* display: none !important; */
+
+        img:nth-child(2) {
+            right: 30px !important;
+            height: 200px !important;
+        }
+
+        .nutrition_info_box_image {
+            height: 600px !important;
+            width: 400px !important;
+        }
+
+        .nutritional_info_box_texts {
+            /* left: 23% !important; */
+            bottom: 31% !important;
+        }
+    }
+
+    .footer_actions {
+        flex-direction: column !important;
+
+        button {
+            margin: 0 auto 15px auto !important;
+            width: 100% !important;
+            display: flex;
+            flex-direction: row !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+            div {
+                margin-right: 20px;
+            }
+
+            p {
+                margin: 0 !important;
+            }
+        }
+
+        button:nth-child(1) { order: 2 !important; }
+        button:nth-child(2) { order: 1 !important; }
+        button:nth-child(3) { order: 3 !important; }
+    }
+
+    .modal_container {
+        max-width: 90% !important;
+        overflow-y: scroll;
+        max-height: 80vh;
+
+        .modal_items {
+            flex-direction: column !important;
+
+            .modal_item {
+                margin: 0 !important;
+                margin-top: 10px !important;
+            }
+        }
+
+        .modal_title {
+            display: flex;
+            flex-direction: column !important;
+
+            img {
+                margin-left: 0 !important;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .buy_box {
+        width: 100% !important;
+
+        & > div {
+            width: 100% !important;
+        }
+
+        .buy_input_box {
+            width: 100% !important;
+            
+            .input_container {
+                flex-direction: column !important;
+                width: 100% !important;
+                padding: 0 !important;
+
+                input {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+	
+    .pattern_tablet {
+        background: url(assetURL('patterns/border_tablet_full.png')) !important;
+        background-size: 100% 100% !important;
+        background-repeat: no-repeat !important;		
+    }
+
+    .game_container {
+        .edition_selection {
+            width: 100% !important;
+
+            display: flex !important;
+            flex-direction: column !important;
+
+            button {
+                width: 95% !important;
+                margin: 10px auto !important;
+            }
+        }
+
+        .coin_container {
+            max-width: 90% !important;
+            margin: 0 auto !important;
+        }
+    }
+}

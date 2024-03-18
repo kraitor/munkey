@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Memento';
+    src: url('/assets/fonts/memento_griseo_ruber/Memento Griseo Ruber.ttf');
+}
+
+@mixin mainFont() {
+    font-family: 'Poppins', sans-serif;
+    //font-family: 'LemonMilk' !important;
+}
+
+@mixin secondaryFont() {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+@mixin aileronFont() {
+    font-family: 'Memento', sans-serif;
+}

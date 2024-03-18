@@ -1,0 +1,8 @@
+@mixin transition($time) {
+    transition: all $time ease-in;
+    -webkit-transition: all $time ease-in;
+}
+
+@mixin box_shadow_button($color) { 
+    box-shadow: $color 0px 3px 0px;
+}

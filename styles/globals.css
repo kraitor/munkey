@@ -1,0 +1,135 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+    background: #0e312d;
+    box-shadow: rgb(0 0 0 / 20%) 0px -19px 38px, rgb(0 0 0 / 10%) 0px -15px 12px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    padding: 5px 0;
+    color: white;
+}
+
+.footer svg path {
+    fill: #fff !important;
+}
+
+/*.footer-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: 0;
+}*/
+
+.footer .row {
+    z-index: 10;
+}
+
+.footer .networks {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.footer .networks a {
+    margin: 5px;
+}
+
+.footer .copyright {
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.footer .copyright a {
+    font-weight: 600;
+    /*color: rgba(255,255,255,.8);*/
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer .copyright {
+            font-size: 0.9em !important;
+            padding: 0 !important;
+    }
+}
+
+/* FOOTER LOTTERY */
+.footer_lottery {
+    background:#000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+/*.footer-blur_lottery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: 0;
+}*/
+
+.footer_lottery .row {
+    z-index: 10;
+}
+
+.footer_lottery .networks {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.footer_lottery .networks a {
+    margin: 5px;
+}
+
+.footer_lottery .copyright {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.footer_lottery .copyright a {
+    font-weight: 600;
+    color:#f0b90b;
+    /*color: rgba(255,255,255,.8);*/
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer_lottery .copyright {
+            font-size: 1em !important;
+            padding: 0 !important;
+    }
+}
