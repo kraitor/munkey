@@ -9,18 +9,11 @@ import { useRouter } from 'next/router'
 import Footer from '../components/Layout/Footer';
 import Rodal from 'rodal';
 import _ from 'lodash';
-import { ethers } from 'ethers';
-import { useWeb3 } from '../hooks/useWeb3'
-import Web3 from 'web3';
 import {
     CircularProgress,
     Snackbar
 } from '@mui/material';
 import styles from '../styles/nfts.module.scss'
-import BackButton from '../components/Layout/BackButton';
-
-import NFTService from '../services/NFTService';
-import EthersService from '../services/EthersService';
 
 import { copyToClipboard } from '../utils/clipboard';
 import { toast } from "react-toastify";
@@ -91,7 +84,6 @@ const NFTMint = (props) => {
     const [flipping, isFlipping] = React.useState(false);
     const [betAmount, setBetAmount] = React.useState(0);
     const [betType, setBetType] = React.useState(BET_TYPE.UNKNOWN);
-    const [edition, setEdition] = React.useState(NFTService.getEditions().COMMON);
 
     const getInstanceAnimationCenter = useCallback((instance) => {
         refAnimationCenter.current = instance;
@@ -230,7 +222,7 @@ const NFTMint = (props) => {
         <div className={[styles.container, loading ? styles.loading : null, styles.has_footer].join(' ')}>
 
             <SEO
-                title={'Munkey in Solana'}
+                title={'Munkey | Slerf Killer'}
                 description={`Munkey in Solana | Don't miss | Slerf Killer!`}
                 image="https://i.ibb.co/hZzjmYB/munkey.jpg"
             />
@@ -276,19 +268,19 @@ const NFTMint = (props) => {
 
                 <div className={styles.edition_selection} style={{ display: 'flex', flexDirection: 'row' }}>
                     <button
-                        className={`glow-on-hover ${edition.address == NFTService.getEditions().COMMON.address ? 'selected' : ''} effect-1`}
+                        className={`glow-on-hover effect-1`}
                         type="button"
                         onClick={() => {
-                            window.open("https://google.com.ar")
+                            window.open("https://t.me/MunkeySolana")
                         }}>
                         <h1 style={{ letterSpacing: 2 }}>Telegram</h1>
                     </button>
 
                     <button
-                        className={`glow-on-hover ${edition.address == NFTService.getEditions().EXCLUSIVE.address ? 'selected' : ''} effect-2`}
+                        className={`glow-on-hover effect-2`}
                         type="button"
                         onClick={() => {
-                            window.open("https://google.com.ar")
+                            window.open("https://twitter.com/MunkeySOL")
                         }}>
                         <h1 style={{ letterSpacing: 2 }}>Twitter</h1>
                     </button>
@@ -297,7 +289,7 @@ const NFTMint = (props) => {
                         className={`glow-on-hover effect-3`}
                         type="button"
                         onClick={() => {
-                            window.open("https://google.com.ar")
+                            window.open("https://dexscreener.com/solana/5tjj6Ramjbjzn6Sdk9g51f1Psx8BseVeuZ6PRzbU5Rne")
                         }}>
                         <h1 style={{ letterSpacing: 2 }}>Chart</h1>
                     </button>
