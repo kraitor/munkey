@@ -1,8 +1,7 @@
 const path = require('path')
 
 const configuration = {
-    reactStrictMode: true,
-    distDir: 'build'
+    reactStrictMode: true
 };
 
 module.exports = configuration;
