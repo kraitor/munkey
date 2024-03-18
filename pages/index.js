@@ -254,8 +254,8 @@ const NFTMint = (props) => {
             </div>
 
             <div className={`${[styles.game_container].join(' ')} ${flipping ? 'is_flipping' : ''}`}>
-                <h1 style={{ fontSize: '5em', color: 'white' }}>Munkey in SOLANA</h1>
-                <h2 style={{ fontSize: '1.5em', color: 'rgba(255,255,255,.5)' }}>SLERF KILLER</h2>
+                <h1 style={{ fontSize: '5em', color: 'white', textAlign: 'center' }}>Munkey in SOLANA</h1>
+                <h2 style={{ fontSize: '1.5em', color: 'rgba(255,255,255,.5)', textAlign: 'center' }}>SLERF KILLER</h2>
                 <div className={styles.preview_boxes} id="preview_boxes">
                     <div id={'preview_1'} className={[styles.preview_nft]}></div>
                     <div id={'preview_2'} className={[styles.preview_nft]}></div>
